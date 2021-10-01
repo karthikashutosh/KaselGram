@@ -28,6 +28,9 @@ body {
   margin-top: 60px;
   font-size: 2.6rem;
 }
+.output > .error {
+  color: var(--error);
+}
 
 /* upload form styles */
 
