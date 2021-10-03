@@ -1,7 +1,7 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-import "firebase/storage";
-import "firebase/auth";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
+import "firebase/compat/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDINbjDrKW9EHbyvKwpPvB0N_9Rzaavkc4",
@@ -14,10 +14,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-const db = firebase.firestore();
-const auth = firebase.auth();
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
 const storage = firebase.storage();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 const provider = new firebase.auth.GoogleAuthProvider();
