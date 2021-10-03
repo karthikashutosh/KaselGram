@@ -14,13 +14,16 @@ export default function UploadForm() {
       setError("");
     } else {
       setFile(null);
-      setError("Please select Png/Jpeg Image file ");
+      setError("Please select an Image file(Png/Jpeg) ");
     }
   };
 
   return (
     <form>
-      <input type="file" onChange={handleChange}></input>
+      <label>
+        <input type="file" onChange={handleChange}></input>
+        <span>+</span>
+      </label>
       <div className="output">
         {error && <div className="error">{error}</div>}
         {file && <div>{file.name}</div>}

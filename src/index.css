@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 :root {
   --primary: #10b981;
   --secondary: #4e4e4e;
@@ -7,7 +7,7 @@
 
 /* base styles & title */
 body {
-  font-family: "Lobster", cursive;
+  font-family: "Lilita One", cursive;
   color: var(--secondary);
 }
 .App {
