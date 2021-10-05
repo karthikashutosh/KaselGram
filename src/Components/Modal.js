@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Modal({ selectedImg, setSelectedImg }) {
   const handleClick = (e) => {
@@ -7,7 +8,14 @@ export default function Modal({ selectedImg, setSelectedImg }) {
     }
   };
 
-  return <div className="backdrop" onClick={handleClick}>
+  return (
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{ duration:.5 }}
+      className="backdrop"
+      onClick={handleClick}
+    >
       <img src={selectedImg} alt="enlarged_image" />
-  </div>;
+    </motion.div>
+  );
 }
