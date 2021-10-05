@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { auth } from "../Firebase/config";
+import { IconButton } from "@material-ui/core";
+import { ExitToApp } from "@material-ui/icons";
 
 const Title = () => {
+  function signOut() {
+    auth.signOut();
+  }
+
   return (
     <div className="title">
       <h1>kasel-Gram</h1>
@@ -9,7 +16,9 @@ const Title = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <h1>Home</h1>
         </Link>
-        {/* <Darkmode /> */}
+        <IconButton>
+          <ExitToApp onClick={signOut} />
+        </IconButton>
         <Link to="/explore" style={{ textDecoration: "none" }}>
           <h1>Explore</h1>
         </Link>

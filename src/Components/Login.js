@@ -11,7 +11,7 @@ export default function Login() {
     <div className="app">
       <div className="login">
         <div className="login__container">
-          <img src="./login-logo.png" alt="logo" />
+          <img src="public/instalogo.png" alt="" />
           <div className="login__text">
             <h1>Sign in KaselGram</h1>
           </div>
