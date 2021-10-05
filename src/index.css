@@ -94,6 +94,13 @@ label:hover {
   left: 0;
 }
 
+.nav-bar{
+  display: flex;
+justify-content: space-around;
+  
+
+}
+
 /* modal styles */
 .backdrop {
   position: fixed;
