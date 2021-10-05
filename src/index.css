@@ -344,13 +344,18 @@ Stock Photos
   padding: 3rem;
 }
 
-.dark-theme {
-  background-color: #282c35;
-  font: #fff;
-  --clr-primary:var(--primary);
+.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
 }
-.light-theme {
-  --clr-bcg: #fff;
-  --clr-font: #282c35;
-  --clr-primary: #d23669;
+
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
 }
+
+/*dark*/

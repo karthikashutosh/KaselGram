@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Darkmode from "../Components/Darkmode";
 
 const Title = () => {
   return (
@@ -10,7 +9,7 @@ const Title = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <h1>Home</h1>
         </Link>
-        <Darkmode />
+        {/* <Darkmode /> */}
         <Link to="/explore" style={{ textDecoration: "none" }}>
           <h1>Explore</h1>
         </Link>

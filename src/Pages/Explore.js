@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import Photo from "../Components/Photo";
 
+
 const clientID = `?client_id=7LlUYcOssDle1UV_ArpWm1xGjS-SdahQ4RFDiHuznms`;
 const mainUrl = `https://api.unsplash.com/photos/`;
 const searchUrl = `https://api.unsplash.com/search/photos/`;
@@ -24,7 +25,7 @@ function App() {
     try {
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
+    //   console.log(data);
       setPhotos((oldPhotos) => {
         if (query && page === 1) {
           return data.results;
